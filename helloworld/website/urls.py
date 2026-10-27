@@ -30,6 +30,9 @@ urlpatterns = [
         'funcionario/cadastrar/',
         views.FuncionarioCreateView.as_view(),
         name = 'cadastra_funcionario'
-    )
+    ),
+    # --- ADICIONE ESTAS DUAS ROTAS NOVAS AQUI ---
+    path('fbv/', views.minha_fbv, name='minha_fbv'),
+    path('cbv/', MinhaCBV.as_view(), name='minha_cbv'),
 
 ]

@@ -56,7 +56,7 @@ class FuncionarioCreateView(CreateView):
 
 # --- ATIVIDADE 5: REQUISITOS DA FBV E CBV (ADICIONADOS AO FINAL) ---
 def minha_fbv(request):
-    metodo = request.method
+    metodo = request.method #<--- COLOCAR O BREAKPOINT AQUI (na linha do return)
     caminho = request.path
     esquema = request.scheme
     param_get = request.GET.get('nome', 'Nenhum')
@@ -68,7 +68,7 @@ def minha_fbv(request):
     <p><b>Esquema (Scheme):</b> {esquema}</p>
     <p><b>Parâmetro GET ('nome'):</b> {param_get}</p>
     """
-    return HttpResponse(html)
+    return HttpResponse(html) 
 
 class MinhaCBV(View):
     def get(self, request):
