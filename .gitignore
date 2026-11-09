@@ -1,0 +1,13 @@
+# Ambiente virtual
+.venv/
+venv/
+
+# Arquivos compilados do Python
+__pycache__/
+*.__pycache__
+
+# Base de ddos local de desenvolvimento
+*.sqlite3
+
+# Configurações do VS Code
+.vscode/
